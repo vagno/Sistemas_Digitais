@@ -5,6 +5,10 @@
 int area(int x1, int x2, int x3, int y1, int y2, int y3){
     int a;
     a = ((x1*y2 + y1*x3 + x2*y3)-(x3*y2 + y3*x1 + x2*y1))/2;
+    
+    if (a < 0){
+        return a * (-1);
+    }
     return a;
 }
 
@@ -18,18 +22,15 @@ int triangulo( int x1, int x2, int x3, int y1, int y2, int y3, int i, int j){
     return t1 + t2 + t3 <= t;
 }
 
-
-
 int main(){
+    int x1, y1, x2, y2, x3 , y3 ;
+    x1=1;
+    y1=1;
+    x2=1;
+    y2=9;
+    x3=8;
+    y3=5;
 /*
-    int i, a;
-    int x1 , y1;
-    int x2 , y2;
-    int x3 , y3;
-    int l = 20 , c = 20; //tamanho da tela
-//    printf("tamanho da tela: ");
-
-    
     printf("Digite os pontos A x1 do triangulo: ");
     scanf("%d", x1);
     printf("Digite os pontos A y1 do triangulo: ");
@@ -42,23 +43,7 @@ int main(){
         scanf("%d", x3);
     printf("Digite os pontos C y3 do triangulo: ");
         scanf("%d", y3);
-    
-    for (i=0 ; i<=l ; i++){
-        
-        a = ((x1*y2 + y1*x3 + x2*y3)- ())
-    }
-
-}*/
-
-
-int x1, y1, x2, y2, x3 , y3 ;
-x1=1;
-x2=1;
-y1=4;
-y2=1;
-x3=1;
-y3=5;
-
+*/
 
 int x = 10; //linhas por coluna
 
@@ -69,13 +54,9 @@ for (int i=0 ; i<x; ++i){
             printf("X");
         }
         else{
-            printf("o");
+            printf("-");
         }
     }
+        printf ("\n");
 }
 }
-
-
-
-
-
